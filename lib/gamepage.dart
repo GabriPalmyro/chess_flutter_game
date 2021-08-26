@@ -680,11 +680,9 @@ class _GamePageState extends State<GamePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(
-                    'Vez de: ' + (whiteTurn ? 'brancos' : 'pretos'),
-                    style: TextStyle(
-                        color: whiteTurn ? Colors.white : Colors.black,
-                        fontSize: 18),
+                  CircleAvatar(
+                    backgroundColor: whiteTurn ? Colors.white : Colors.black,
+                    maxRadius: 20,
                   ),
                   IconButton(
                       icon: Icon(
